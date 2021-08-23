@@ -111,6 +111,7 @@ class LightgbmAlgorithm(BaseAlgorithm):
             "feature_fraction": self.params.get("feature_fraction", 1.0),
             "bagging_fraction": self.params.get("bagging_fraction", 1.0),
             "min_data_in_leaf": self.params.get("min_data_in_leaf", 20),
+            "is_unbalance": True,
             "num_threads": n_jobs,
             "verbose": -1,
             "seed": self.params.get("seed", 1),
